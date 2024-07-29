@@ -1,0 +1,30 @@
+
+{% comment %}
+    
+    {% autoescape 
+    {% ifchanged  %}
+        off
+    {% endifchanged %}
+         %}
+        
+        {% autoescape off %}
+            <!DOCTYPE html>
+            <html>
+            <head>
+                <meta charset="UTF-8" />
+                <title>
+                {% autoescape off %}
+                    title
+                {% endautoescape %}
+                </title>
+            </head>
+            <body>
+                
+            </body>
+            </html>
+        {% endautoescape %}
+        
+    {% endautoescape %}
+    
+{% endcomment %}
+    
